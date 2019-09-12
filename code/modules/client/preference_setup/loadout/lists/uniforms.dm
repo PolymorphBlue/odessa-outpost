@@ -6,7 +6,7 @@
 	slot = slot_w_uniform
 	sort_category = "Uniforms and Casual Dress"
 
-/datum/gear/uniform/jumpsuit
+/datum/gear/uniform/jumpsuit/rainbow
 	display_name = "jumpsuit selection"
 	path = /obj/item/clothing/under/color/
 	flags = GEAR_HAS_TYPE_SELECTION

@@ -1,4 +1,3 @@
-
 /datum/gear/accessory
 	sort_category = "Accessories"
 	category = /datum/gear/accessory
