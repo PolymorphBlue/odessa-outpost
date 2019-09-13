@@ -101,12 +101,12 @@ other types of metals and chemistry for reagents).
 /datum/design/research/item/medical/defibs
 	desc = "Large paddles that get charged via a cell to give a controlled shock for revival."
 	build_path = /obj/item/device/defib_kit
-	sort_string = "MACBC"
+	sort_string = "MACCA"
 
 /datum/design/research/item/medical/compact_defibs
 	desc = "Much smaller defibulators build into a belt, to more easily carry."
 	build_path = /obj/item/device/defib_kit/compact
-	sort_string = "MACBD"
+	sort_string = "MACCB"
 
 /datum/design/research/item/beaker
 	name_category = "beaker prototype"

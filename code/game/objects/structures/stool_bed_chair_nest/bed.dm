@@ -208,6 +208,14 @@
 /obj/structure/bed/padded/New(var/newloc)
 	..(newloc,MATERIAL_PLASTIC,"cotton")
 
+/obj/structure/bed/double
+	name = "double bed"
+	icon_state = "doublebed"
+	base_icon = "doublebed"
+
+/obj/structure/bed/double/padded/New(var/newloc)
+	..(newloc,"wood","cotton")
+
 /obj/structure/bed/alien
 	name = "resting contraption"
 	desc = "This looks similar to contraptions from earth. Could aliens be stealing our technology?"

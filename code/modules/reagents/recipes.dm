@@ -206,8 +206,14 @@
 
 /datum/chemical_reaction/carthatoline
 	result = "carthatoline"
-	required_reagents = list("anti_toxin" = 1, "toxin" = 1, "plasma" = 0.1)
-	catalysts = list("plasma" = 1)
+	required_reagents = list("anti_toxin" = 1, "carbon" = 2, "plasma" = 0.1)
+	catalysts = list("plasma" = 5)
+	result_amount = 2
+
+/datum/chemical_reaction/cordradaxon
+	result = "cordradaxon"
+	required_reagents = list("potassium_chloride" = 1, "blattedin" = 1, "bicaridine" = 1)
+	catalysts = list("plasma" = 5)
 	result_amount = 2
 
 /datum/chemical_reaction/tramadol
@@ -336,11 +342,29 @@
 	required_reagents = list("dexalin" = 1, "carbon" = 1, "iron" = 1)
 	result_amount = 3
 
+/datum/chemical_reaction/respirodaxon
+	result = "respirodaxon"
+	required_reagents = list("dexalinp" = 1, "blattedin" = 1, "plasma" = 0.1)
+	catalysts = list("plasma" = 5)
+	result_amount = 2
+
 /datum/chemical_reaction/bicaridine
 	result = "bicaridine"
-	required_reagents = list("inaprovaline" = 2, "blattedin" = 1)
+	required_reagents = list("inaprovaline" = 1, "carbon" = 1)
 	inhibitors = list("sugar" = 1) // Messes up with inaprovaline
-	result_amount = 3
+	result_amount = 2
+
+/datum/chemical_reaction/vermicetol
+	result = "vermicetol"
+	required_reagents = list("kelotane" = 1, "dermaline" = 1, "blattedin" = 1, "plasma" = 0.1)
+	catalysts = list("plasma" = 5)
+	result_amount = 2
+
+/datum/chemical_reaction/varceptol
+	result = "varceptol"
+	required_reagents = list("anti_toxin" = 1, "bicaridine" = 1, "blattedin" = 1)
+	catalysts = list("plasma" = 5)
+	result_amount = 2
 
 /datum/chemical_reaction/hyperzine
 	result = "hyperzine"
@@ -1287,7 +1311,7 @@
 
 /datum/chemical_reaction/nuka_cola
 	result = "nuka_cola"
-	required_reagents = list(MATERIAL_URANIUM = 1, "cola" = 5)
+	required_reagents = list("radium" = 1, "cola" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/moonshine
@@ -1447,7 +1471,7 @@
 
 /datum/chemical_reaction/atomicbomb
 	result = "atomicbomb"
-	required_reagents = list("b52" = 10, MATERIAL_URANIUM = 1)
+	required_reagents = list("b52" = 10, "radium" = 1)
 	result_amount = 10
 
 /datum/chemical_reaction/margarita
@@ -1467,7 +1491,7 @@
 
 /datum/chemical_reaction/threemileisland
 	result = "threemileisland"
-	required_reagents = list("longislandicedtea" = 10, MATERIAL_URANIUM = 1)
+	required_reagents = list("longislandicedtea" = 10, "radium" = 1)
 	result_amount = 10
 
 /datum/chemical_reaction/whiskeysoda
@@ -1487,7 +1511,7 @@
 
 /datum/chemical_reaction/manhattan_proj
 	result = "manhattan_proj"
-	required_reagents = list("manhattan" = 10, MATERIAL_URANIUM = 1)
+	required_reagents = list("manhattan" = 10, "radium" = 1)
 	result_amount = 10
 
 /datum/chemical_reaction/vodka_tonic
@@ -2004,3 +2028,22 @@
 	result = "nanovoice"
 	required_reagents = list("uncap nanites" = 1, "synaptizine" = 1)
 	result_amount = 1
+/datum/chemical_reaction/drinks/daiquiri
+	result = "daiquiri"
+	required_reagents = list("rum" = 3, "limejuice" = 2, "sugar" = 1)
+	result_amount = 5
+
+/datum/chemical_reaction/drinks/whiskeysour
+	result = "whiskeysour"
+	required_reagents = list("whiskey" = 2, "lemonjuice" = 1, "sugar" = 1)
+	result_amount = 4
+
+/datum/chemical_reaction/drinks/mojito
+	result = "mojito"
+	required_reagents = list("rum" = 3, "limejuice" = 1, "ice" = 1)
+	result_amount = 5
+
+/datum/chemical_reaction/drinks/balloon
+	result = "balloon"
+	required_reagents = list("cream" = 1, "bluecuracao" = 1)
+	result_amount = 2

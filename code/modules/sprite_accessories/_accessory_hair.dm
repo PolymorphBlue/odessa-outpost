@@ -553,6 +553,62 @@
 	name = "Side Ponytail 2"
 	icon_state = "ponytailf"
 
+/datum/sprite_accessory/hair/teshari_default
+	name = "Teshari default"
+	icon_state = "teshari_default_s"
+
+/datum/sprite_accessory/hair/teshari_upright
+	name = "Teshari upright"
+	icon_state = "teshari_upright_s"
+
+/datum/sprite_accessory/hair/teshari_burst_short
+	name = "Teshari burst short"
+	icon_state = "teshari_burst_short_s"
+
+/datum/sprite_accessory/hair/teshari_burst
+	name = "Teshari burst"
+	icon_state = "teshari_burst_s"
+
+/datum/sprite_accessory/hair/teshari_pointy
+	name = "Teshari pointy"
+	icon_state = "teshari_pointy_s"
+
+/datum/sprite_accessory/hair/teshari_mushroom
+	name = "Teshari mushroom"
+	icon_state = "teshari_mushroom_s"
+
+/datum/sprite_accessory/hair/teshari_droopy
+	name = "Teshari droopy"
+	icon_state = "teshari_droopy_s"
+
+/datum/sprite_accessory/hair/teshari_mane
+	name = "Teshari mane"
+	icon_state = "teshari_mane_s"
+
+/datum/sprite_accessory/hair/teshari_ears
+	name = "Teshari ears"
+	icon_state = "teshari_ears_s"
+
+/datum/sprite_accessory/hair/teshari_spike
+	name = "Teshari spike"
+	icon_state = "teshari_spike_s"
+
+/datum/sprite_accessory/hair/teshari_tight
+	name = "Teshari tight"
+	icon_state = "teshari_tight_s"
+
+/datum/sprite_accessory/hair/teshari_long
+	name = "Teshari long"
+	icon_state = "teshari_long_s"
+
+/datum/sprite_accessory/hair/teshari_mohawk
+	name = "Teshari mohawk"
+	icon_state = "teshari_mohawk_s"
+
+/datum/sprite_accessory/hair/teshari_spiky
+	name = "Teshari spiky"
+	icon_state = "teshari_spiky_s"
+
 /datum/sprite_accessory/hair/sideswept
 	name = "Side Swipe"
 	icon_state = "sideswipe"
@@ -644,6 +700,43 @@
 	name = "Zone Braid"
 	icon_state = "zone"
 	gender = FEMALE
+
+/datum/sprite_accessory/hair/messy1
+	name = "Messy"
+	icon_state = "boyish1"
+
+/datum/sprite_accessory/hair/messy2
+	name = "Partly Kept"
+	icon_state = "boyish2"
+
+/datum/sprite_accessory/hair/messy3
+	name = "Tousled"
+	icon_state = "boyish3"
+
+/datum/sprite_accessory/hair/messy4
+	name = "Past Ears"
+	icon_state = "boyish4"
+
+/datum/sprite_accessory/hair/messy5
+	name = "Tidy A"
+	icon_state = "boyish5"
+
+/datum/sprite_accessory/hair/messy5b
+	name = "Tidy B"
+	icon_state = "boyish5b"
+
+/datum/sprite_accessory/hair/blinded
+	name = "Myopia" //alt; 'Fringe Beliefs'
+	icon_state = "overeyebowl"
+
+/datum/sprite_accessory/hair/bookish
+	name = "Bookish"
+	icon_state = "lem"
+
+/datum/sprite_accessory/hair/shorthair3beta
+	name = "Short Hair 3 (Alternate)"
+	icon_state = "shorthair3beta"
+
 
 /datum/sprite_accessory/hair/crestedquill
 	name = "Crested Quills"
@@ -1640,43 +1733,30 @@ Not confirmed. Someone needs to do the legwork eventually.
 //Teshari things
 	teshari
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_altdefault
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_tight
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_excited
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_spike
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_long
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_burst
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_shortburst
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_mohawk
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_pointy
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_upright
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_mane
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_droopy
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
-
 	teshari_mushroom
 		icon_add = 'icons/mob/human_face_vr_add.dmi'
 
@@ -1863,3 +1943,9 @@ Not confirmed. Someone needs to do the legwork eventually.
 		icon_state = "cxeno_praetorian"
 		species_allowed = list(SPECIES_XENOHYBRID)
 		gender = NEUTER */
+
+//I
+//Don't
+//Know
+//Anymore
+//Fam

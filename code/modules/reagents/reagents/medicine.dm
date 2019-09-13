@@ -31,6 +31,35 @@
 	M.heal_organ_damage(0.6 * effect_multiplier, 0, 5 * effect_multiplier)
 	M.add_chemical_effect(CE_BLOODCLOT, 0.15)
 
+/datum/reagent/vermicetol
+	name = "Vermicetol"
+	id = "vermicetol"
+	description = "A potent chemical that treats physical damage at an exceptional rate."
+	taste_description = "bitter meat"
+	taste_mult = 3
+	reagent_state = LIQUID
+	color = "#964e06"
+	overdose = REAGENTS_OVERDOSE * 0.5
+	scannable = 1
+
+/datum/reagent/vermicetol/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.heal_organ_damage(12 * removed, 0)
+
+/datum/reagent/varceptol
+	name = "Varceptol"
+	id = "varceptol"
+	description = "A powerful treatment chemical capable of repairing both the body and purging of toxins."
+	taste_description = "tangy"
+	taste_mult = 3
+	reagent_state = LIQUID
+	color = "#FF69B4" //rgb(255,105,180)hotpink
+	overdose = REAGENTS_OVERDOSE * 0.5
+	scannable = 1
+
+/datum/reagent/varceptol/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.heal_organ_damage(8 * removed, 0)
+	M.adjustToxLoss(-3 * removed)
+
 /datum/reagent/kelotane
 	name = "Kelotane"
 	id = "kelotane"
@@ -92,6 +121,24 @@
 			if(L.damage > 0)
 				L.damage = max(L.damage - 2 * removed, 0)
 
+/datum/reagent/cordradaxon
+	name = "Cordradaxon"
+	id = "cordradaxon"
+	description = "An intense organ repair chemical used to treat damage to the heart."
+	reagent_state = LIQUID
+	color = "#8B0000" // rgb(139,0,0)
+	scannable = 1
+
+/datum/reagent/cordradaxon/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/heart/C = H.internal_organs_by_name[BP_HEART]
+		if(H && istype(H))
+			if(BP_IS_ROBOTIC(C))
+				return
+			if(C.damage > 0)
+				C.damage = max(C.damage - 5 * removed, 0)
+
 /datum/reagent/dexalin
 	name = "Dexalin"
 	id = "dexalin"
@@ -121,6 +168,26 @@
 	M.adjustOxyLoss(-30 * effect_multiplier)
 	M.add_chemical_effect(CE_OXYGENATED, 2)
 	holder.remove_reagent("lexorin", 0.3 * effect_multiplier)
+
+/datum/reagent/respirodaxon
+	name = "Respirodaxon"
+	id = "respirodaxon"
+	description = "An intense organ repair chemical used to treat damage to the lungs."
+	taste_description = "bitter air"
+	reagent_state = LIQUID
+	color = "#000080"
+	overdose = REAGENTS_OVERDOSE * 0.5
+	scannable = 1
+
+datum/reagent/respirodaxon/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/lungs/L = H.internal_organs_by_name[BP_LUNGS]
+		if(H && istype(H))
+			if(BP_IS_ROBOTIC(L))
+				return
+			if(L.damage > 0)
+				L.damage = max(L.damage - 5 * removed, 0)
 
 /datum/reagent/tricordrazine
 	name = "Tricordrazine"
@@ -530,7 +597,7 @@
 		M.make_dizzy(5)
 		M.make_jittery(5)
 
-/datum/reagent/quickclot  
+/datum/reagent/quickclot
 	name = "Quickclot"
 	id = "quickclot"
 	description = "Temporarily stops\\oppresses any internal and external bleeding."
@@ -552,7 +619,7 @@
 /datum/reagent/quickclot/overdose(var/mob/living/carbon/M, var/alien)
 	M.add_chemical_effect(CE_BLOODCLOT, min(1, 0.20))
 
-/datum/reagent/ossisine   
+/datum/reagent/ossisine
 	name = "Ossisine"
 	id = "ossisine"
 	description = "Paralyses user and restores broken bones."
@@ -594,7 +661,7 @@
 	M.make_jittery(-50)
 
 
-/datum/reagent/kyphotorin 
+/datum/reagent/kyphotorin
 	name = "Kyphotorin"
 	id = "kyphotorin"
 	description = "Allows patient to grow back limbs, yet by sacrificing lots of blood and nutrients, also deals random damage to body parts, extremely painful and needs constant medical attention when applied."
